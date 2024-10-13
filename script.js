@@ -49,7 +49,7 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 /*==================== typed js ====================*/
 
 const typed = new Typed("#vote", {
-    strings: ["Frontend Developer", "Youtuber", "Blogger"],
+    strings: ["Frontend Developer", "Critical thinker", "Mentor"],
     typeSpeed: 100,
     backSpeed: 60,
     backDelay: 1000,
