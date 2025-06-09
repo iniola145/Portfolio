@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="xstyles.css">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header class="flex justify-around items-center p-2 bg-[#1F242D] shadow-2xl header">
+        <a href="#" class="slideright text-white text-[40px] font-bold">Portfolio.</a>
+        <nav class="space-x-6">
+            <a href="#"
+                class="slidedown inline-block opacity-0 text-[20px] text-white font-bold hover:text-[#00EEFF] duration-[400ms]"
+                style="--i:1">Home</a>
+            <a href="#two"
+                class="slidedown inline-block opacity-0 text-[20px] text-white font-bold hover:text-[#00EEFF] duration-[400ms]"
+                style="--i:2">About</a>
+            <a href="#three"
+                class="slidedown inline-block opacity-0 text-[20px] text-white font-bold hover:text-[#00EEFF] duration-[400ms]"
+                style="--i:3">Skills</a>
+            <a href="#four"
+                class="slidedown inline-block opacity-0 text-[20px] text-white font-bold hover:text-[#00EEFF] duration-[400ms]"
+                style="--i:4">Portfolio</a>
+            <a href="#five"
+                class="slidedown inline-block opacity-0 text-[20px] text-white font-bold hover:text-[#00EEFF] duration-[400ms]"
+                style="--i:5">Contacts</a>
+        </nav>
+    </header>
+
+    <!-- First section for Home -->
+    <section
+        class="flex flex-col lg:flex-row justify-around items-center px-5 md:px-10 py-10 lg:py-20 lg:h-screen bg-[#1F242D]">
+        <div class="animate-slideIn text-center lg:text-left">
+            <!-- Responsive heading text sizes -->
+            <h3 class="text-[24px] md:text-[28px] lg:text-[32px] text-white mb-2 font-black slidedown">Hello, It's me</h3>
+            <h1 class="text-[32px] md:text-[40px] lg:text-[48px] font-bold mb-4 text-white slideright">Mark Olamide</h1>
+            <h3 class="font-black text-[24px] md:text-[28px] lg:text-[32px] text-white mb-4 slideup">And I'm a <span id="vote"
+                    class="text-[#00EEFF]"></span></h3>
+            <!-- Responsive paragraph max-width for text readability -->
+            <p class="text-white mb-6 max-w-xs md:max-w-md lg:max-w-lg mx-auto lg:mx-0 slideleft">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate tenetur corrupti, laudantium voluptatem, dicta tempora.</p>
+
+            <!-- Social media icons - stack horizontally on larger screens -->
+            <div
+                class="space-x-4 flex items-center justify-center lg:justify-start w-full lg:w-[30%] pt-[40px] px-0 pb-[15px]">
+                <a href="#"
+                    class="slideleft flex hover:bg-[#0ef] hover:text-[#1f242d] items-center justify-center border-[3px] text-[18px] lg:text-[20px] rounded-full bg-transparent p-[10px] text-[#0ef] w-[35px] h-[35px] lg:w-[40px] lg:h-[40px] hover:shadow-custom opacity-0 duration-[400ms]"
+                    style="--i:6"><i class='bx bxl-twitter'></i></a>
+                <a href="#"
+                    class="slideleft flex hover:bg-[#0ef] hover:text-[#1f242d] items-center justify-center border-[3px] text-[18px] lg:text-[20px] rounded-full bg-transparent p-[10px] text-[#0ef] w-[35px] h-[35px] lg:w-[40px] lg:h-[40px] hover:shadow-custom opacity-0 duration-[400ms]"
+                    style="--i:7"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"
+                    class="slideleft flex hover:bg-[#0ef] hover:text-[#1f242d] items-center justify-center border-[3px] text-[18px] lg:text-[20px] rounded-full bg-transparent p-[10px] text-[#0ef] w-[35px] h-[35px] lg:w-[40px] lg:h-[40px] hover:shadow-custom opacity-0 duration-[400ms]"
+                    style="--i:8"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"
+                    class="slideleft flex hover:bg-[#0ef] hover:text-[#1f242d] items-center justify-center border-[3px] text-[18px] lg:text-[20px] rounded-full bg-transparent p-[10px] text-[#0ef] w-[35px] h-[35px] lg:w-[40px] lg:h-[40px] hover:shadow-custom opacity-0 duration-[400ms]"
+                    style="--i:9"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <!-- Download CV button -->
+            <a href="#"
+                class="buttons inline-block mt-8 px-5 md:px-6 py-2 md:py-3 bg-[#0ef] text-[#1f242d] duration-[400ms] opacity-0 font-bold rounded-[20px] border border-light-custom hover:bg-[#00EEFF] hover:text-[#1F242D] hover:shadow-none">
+                Download CV
+            </a>
+        </div>
+
+        <!-- Image section - responsive height and margins -->
+        <div class="mt-14 lg:mt-0">
+            <img src="./Images/home.png" alt="Home Image"
+                class="h-[300px] md:h-[400px] lg:h-[500px] rounded-[20px] md:rounded-[30px] lg:rounded-[40px] opacity-0 float-image">
+        </div>
+    </section>
+
+
+    <!-- Second section for About -->
+    <section
+        class="flex flex-col-reverse lg:flex-row justify-around items-center px-5 py-16 lg:py-20 lg:h-screen bg-[#323946]"
+        id="two">
+        <div class="mt-14 lg:mt-0 lg:mr-5">
+            <img src="./Images/about.png" alt="About Image"
+                class="w-[80%] md:w-[60%] lg:w-full lg:h-[500px] rounded-[40px] opacity-0 float-image mx-auto lg:mx-0">
+        </div>
+        <div class="text-center lg:text-left">
+            <h2 class="text-[32px] md:text-[48px] text-white mb-2 font-black py-5 md:py-0 slideright">About <span id="low"
+                    class="text-[#00EEFF]">Me</span></h2>
+            <h3 class="text-[20px] md:text-[30px] text-white mb-4 font-black slidedown">Frontend Developer</h3>
+            <p class="text-white mb-6 max-w-md lg:max-w-lg mx-auto lg:mx-0 slideleft">Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Culpa eos iure sed similique quibusdam aspernatur doloremque commodi voluptate. Non
+                est, eius ex, eveniet fugiat delectus repudiandae. Eius, doloremque dolores incidunt suscipit assumenda
+                aliquam nemo dicta repellendus, in quaerat recusandae laboriosam natus. Cupiditate eum, asperiores quod
+                nulla quae dolor perspiciatis aspernatur.</p>
+            <a href="#"
+                class="buttons inline-block px-6 py-3 bg-[#0ef] text-[#1f242d] duration-[400ms] opacity-0 font-bold rounded-[20px] border border-light-custom hover:bg-[#00EEFF] hover:text-[#1F242D] hover:shadow-none slideup">
+                Read More
+            </a>
+        </div>
+    </section>
+
+    <!-- Third section for Services -->
+    <section class="px-5 py-16 lg:py-20 lg:h-screen bg-[#1F242D]" id="three">
+        <h2 class="text-[32px] lg:text-5xl text-white text-center mb-4 font-black slideright">Our <span id="buy-1"
+                class="text-[#00EEFF]">Services</span></h2>
+        <div class="mt-10">
+            <div class="flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-8 lg:gap-4">
+                <div
+                    class="services-card h-[60vh] bg-[#323946] p-6 lg:p-5 text-center space-y-8 w-[90%] lg:w-[28%] border-transparent hover:border-[#00EEFF] border-[3px] hover:scale-110 rounded-[20px] duration-500">
+                    <i class='bx bx-code-alt text-[#00EEFF] text-[40px] slidedown'></i>
+                    <h3 class="text-white text-[20px] lg:text-[24px] font-bold mt-4 slideup">Web Development</h3>
+                    <p class="text-white mt-4 text-[15px] lg:text-base slideleft">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Et veniam autem aut repellendus maiores harum quasi, recusandae deserunt ad
+                        consectetur iusto placeat modi eos reiciendis?</p>
+                    <a href="#"
+                        class="buttons inline-block px-6 py-2 lg:px-7 lg:py-3 bg-[#0ef] text-[#1f242d] duration-[400ms] font-bold rounded-[20px] border hover:bg-[#00EEFF] hover:text-[#1F242D] hover:shadow-none slideup opacity-0">
+                        Read More
+                    </a>
+                </div>
+                <div
+                    class="services-card h-[60vh] bg-[#323946] p-6 lg:p-5 text-center space-y-8 w-[90%] lg:w-[28%] border-transparent hover:border-[#00EEFF] border-[3px] hover:scale-110 rounded-[20px] duration-500">
+                    <i class='bx bx-paint text-[#00EEFF] text-[40px] slidedown'></i>
+                    <h3 class="text-white text-[20px] lg:text-[24px] font-bold mt-4 slideup">Web Design</h3>
+                    <p class="text-white mt-4 text-[15px] lg:text-base slideleft">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Et veniam autem aut repellendus maiores harum quasi, recusandae deserunt ad
+                        consectetur iusto placeat modi eos reiciendis?</p>
+                    <a href="#"
+                        class="buttons inline-block px-6 py-2 lg:px-7 lg:py-3 bg-[#0ef] text-[#1f242d] duration-[400ms] font-bold rounded-[20px] border hover:bg-[#00EEFF] hover:text-[#1F242D] hover:shadow-none slideup opacity-0">
+                        Read More
+                    </a>
+                </div>
+                <div
+                    class="services-card h-[60vh] bg-[#323946] p-6 lg:p-5 text-center space-y-8 w-[90%] lg:w-[28%] border-transparent hover:border-[#00EEFF] border-[3px] hover:scale-110 rounded-[20px] duration-500">
+                    <i class='bx bx-mobile-alt text-[#00EEFF] text-[40px] slidedown'></i>
+                    <h3 class="text-white text-[20px] lg:text-[24px] font-bold mt-4 slideup">Mobile Development</h3>
+                    <p class="text-white mt-4 text-[15px] lg:text-base slideleft">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Et veniam autem aut repellendus maiores harum quasi, recusandae deserunt ad
+                        consectetur iusto placeat modi eos reiciendis?</p>
+                    <a href="#"
+                        class="buttons inline-block px-6 py-2 lg:px-7 lg:py-3 bg-[#0ef] text-[#1f242d] duration-[400ms] font-bold rounded-[20px] border hover:bg-[#00EEFF] hover:text-[#1F242D] hover:shadow-none slideup opacity-0">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Fourth section for Portfolio -->
+    <section class="min-h-screen bg-[#323946] py-12 lg:py-16 px-4 text-white" id="four">
+        <h3 class="text-[32px] lg:text-5xl font-bold text-center mb-10 lg:mb-16">
+            Latest <span class="text-[#0ef]">Project</span>
+        </h3>
+
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-6 lg:gap-7">
+            <!-- Portfolio Item 1 -->
+            <div
+                class="relative rounded-2xl lg:rounded-3xl shadow-lg shadow-[#1f242d] overflow-hidden group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.75rem)]">
+                <img src="./Images/portfolio1.jpg" alt="Portfolio 1"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-black/10 to-[#0ef] flex flex-col items-center justify-center text-center px-6 lg:px-8 translate-y-full group-hover:translate-y-0 duration-700">
+                    <h4 class="text-2xl lg:text-4xl font-bold mb-1">Web Design</h4>
+                    <p class="text-sm lg:text-base mb-3 lg:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Esse, facilis.</p>
+                    <a href="#"
+                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-full bg-white flex items-center justify-center hover:bg-[#1f242d] transition-colors duration-500 group/icon">
+                        <i
+                            class="bx bx-link-external text-lg lg:text-2xl text-[#323946] group-hover/icon:text-[#0ef]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div
+                class="relative rounded-2xl lg:rounded-3xl shadow-lg shadow-[#1f242d] overflow-hidden group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.75rem)]">
+                <img src="./Images/portfolio2.jpg" alt="Portfolio 2"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-black/10 to-[#0ef] flex flex-col items-center justify-center text-center px-6 lg:px-8 translate-y-full group-hover:translate-y-0 duration-700">
+                    <h4 class="text-2xl lg:text-4xl font-bold mb-1">Web Design</h4>
+                    <p class="text-sm lg:text-base mb-3 lg:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Esse, facilis.</p>
+                    <a href="#"
+                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-full bg-white flex items-center justify-center hover:bg-[#1f242d] transition-colors duration-500 group/icon">
+                        <i
+                            class="bx bx-link-external text-lg lg:text-2xl text-[#323946] group-hover/icon:text-[#0ef]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div
+                class="relative rounded-2xl lg:rounded-3xl shadow-lg shadow-[#1f242d] overflow-hidden group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.75rem)]">
+                <img src="./Images/portfolio3.jpg" alt="Portfolio 3"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-black/10 to-[#0ef] flex flex-col items-center justify-center text-center px-6 lg:px-8 translate-y-full group-hover:translate-y-0 duration-700">
+                    <h4 class="text-2xl lg:text-4xl font-bold mb-1">Web Design</h4>
+                    <p class="text-sm lg:text-base mb-3 lg:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Esse, facilis.</p>
+                    <a href="#"
+                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-full bg-white flex items-center justify-center hover:bg-[#1f242d] transition-colors duration-500 group/icon">
+                        <i
+                            class="bx bx-link-external text-lg lg:text-2xl text-[#323946] group-hover/icon:text-[#0ef]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div
+                class="relative rounded-2xl lg:rounded-3xl shadow-lg shadow-[#1f242d] overflow-hidden group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.75rem)]">
+                <img src="./Images/portfolio4.jpg" alt="Portfolio 4"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-black/10 to-[#0ef] flex flex-col items-center justify-center text-center px-6 lg:px-8 translate-y-full group-hover:translate-y-0 duration-700">
+                    <h4 class="text-2xl lg:text-4xl font-bold mb-1">Web Design</h4>
+                    <p class="text-sm lg:text-base mb-3 lg:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Esse, facilis.</p>
+                    <a href="#"
+                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-full bg-white flex items-center justify-center hover:bg-[#1f242d] transition-colors duration-500 group/icon">
+                        <i
+                            class="bx bx-link-external text-lg lg:text-2xl text-[#323946] group-hover/icon:text-[#0ef]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div
+                class="relative rounded-2xl lg:rounded-3xl shadow-lg shadow-[#1f242d] overflow-hidden group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.75rem)]">
+                <img src="./Images/portfolio5.jpg" alt="Portfolio 5"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-black/10 to-[#0ef] flex flex-col items-center justify-center text-center px-6 lg:px-8 translate-y-full group-hover:translate-y-0 duration-700">
+                    <h4 class="text-2xl lg:text-4xl font-bold mb-1">Web Design</h4>
+                    <p class="text-sm lg:text-base mb-3 lg:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Esse, facilis.</p>
+                    <a href="#"
+                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-full bg-white flex items-center justify-center hover:bg-[#1f242d] transition-colors duration-500 group/icon">
+                        <i
+                            class="bx bx-link-external text-lg lg:text-2xl text-[#323946] group-hover/icon:text-[#0ef]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div
+                class="relative rounded-2xl lg:rounded-3xl shadow-lg shadow-[#1f242d] overflow-hidden group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.75rem)]">
+                <img src="./Images/portfolio6.jpg" alt="Portfolio 6"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-black/10 to-[#0ef] flex flex-col items-center justify-center text-center px-6 lg:px-8 translate-y-full group-hover:translate-y-0 duration-700">
+                    <h4 class="text-2xl lg:text-4xl font-bold mb-1">Web Design</h4>
+                    <p class="text-sm lg:text-base mb-3 lg:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Esse, facilis.</p>
+                    <a href="#"
+                        class="w-12 lg:w-16 h-12 lg:h-16 rounded-full bg-white flex items-center justify-center hover:bg-[#1f242d] transition-colors duration-500 group/icon">
+                        <i
+                            class="bx bx-link-external text-lg lg:text-2xl text-[#323946] group-hover/icon:text-[#0ef]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="min-h-screen flex  justify-center bg-[#1F242D] py-12 px-4" id="five">
+        <div class="p-10 w-full ">
+            <h2 class="text-center text-white text-[32px] md:text-[48px] font-bold mb-12">
+                Contact <span class="text-[#00EEFF]">Me!</span>
+            </h2>
+            <form class="flex flex-col space-y-6">
+                <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-6 sm:space-y-0">
+                    <!-- Full Name -->
+                    <input type="text" placeholder="Full Name"
+                        class="flex-1 p-4 rounded-lg bg-[#323946] text-white border-none focus:ring-2 focus:ring-[#00EEFF] outline-none" />
+
+                    <!-- Email Address -->
+                    <input type="email" placeholder="Email Address"
+                        class="flex-1 p-4 rounded-lg bg-[#323946] text-white border-none focus:ring-2 focus:ring-[#00EEFF] outline-none" />
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-6 sm:space-y-0">
+                    <!-- Mobile Number -->
+                    <input type="text" placeholder="Mobile Number"
+                        class="flex-1 p-4 rounded-lg bg-[#323946] text-white border-none focus:ring-2 focus:ring-[#00EEFF] outline-none" />
+
+                    <!-- Email Subject -->
+                    <input type="text" placeholder="Email Subject"
+                        class="flex-1 p-4 rounded-lg bg-[#323946] text-white border-none focus:ring-2 focus:ring-[#00EEFF] outline-none" />
+                </div>
+
+                <!-- Your Message -->
+                <textarea placeholder="Your Message" rows="7"
+                    class="p-4 rounded-lg bg-[#323946] text-white border-none focus:ring-2 focus:ring-[#00EEFF] outline-none"></textarea>
+
+                <!-- Send Message Button -->
+                <div class="text-center py-4">
+                    <button
+                        class="buttons text-[#1F242D] bg-[#0ef] py-3 px-10 rounded-full hover:bg-[#0ef] duration-[400ms] font-bold border hover:text-[#1F242D] hover:shadow-none">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
